@@ -1,0 +1,40 @@
+1
+Tomato
+1
+50.00
+Chop and use in salads or sauces.
+2
+Cheese
+2
+350.00
+Grate and use as a topping or in dishes.
+3
+Lettuce
+1
+15.00
+Wash and use as a base for salads.
+4
+Beef
+3
+120.00
+Grill and serve as a main dish.
+5
+Garlic
+1
+10.00
+Chop and sauté for flavoring dishes.
+6
+Pickle
+2
+15.00
+Slice it and eat.
+7
+Apple
+2
+30.00
+Peel it and eat it.
+8
+Mayo
+1
+200.00
+Use it as a condiment.

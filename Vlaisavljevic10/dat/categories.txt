@@ -1,0 +1,18 @@
+1
+Vegetarian
+In this category you can find all vegetarian ingredients and meals.
+2
+Vegan
+In this category you can find all vegan ingredients and meals.
+3
+Meat
+In this category you can find all meat ingredients and meals.
+4
+Fish
+Fish meals, sushi
+5
+Fruit
+apples, oranges
+6
+Condiment
+Used as a sauce.

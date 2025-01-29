@@ -1,0 +1,40 @@
+1
+Fifth Avenue
+350
+New York
+10118
+2
+Oak Avenue
+456
+Greenville
+54321
+3
+Pine Road
+789
+Rivertown
+67890
+4
+Rat Street
+12
+Paris
+10040
+5
+Japan Street
+70
+Tokyo
+10020
+3
+Japan Street
+34
+Tokyo
+10040
+3
+Japan street 
+34
+Tokyo
+10040
+5
+Rat Street
+14
+Paris
+100000

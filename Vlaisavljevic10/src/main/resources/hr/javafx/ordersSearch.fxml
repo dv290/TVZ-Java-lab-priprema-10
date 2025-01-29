@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.javafx.controller.SearchOrderController">
+    <fx:include source="menuBar.fxml" />
+    <GridPane prefHeight="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label text="Orders Search" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Label text="Order ID:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="orderIdField" promptText="Enter order ID" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+        <TableView fx:id="orderTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.rowSpan="3">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="45.0" text="ID" />
+                <TableColumn fx:id="restaurantNameColumn" prefWidth="134.0" text="Restaurant name" />
+                <TableColumn fx:id="mealsColumn" prefWidth="279.0" text="Meals" />
+                <TableColumn fx:id="delivererColumn" prefWidth="132.0" text="Deliverer" />
+                <TableColumn fx:id="dateTimeColumn" prefWidth="209.0" text="Date and time" />
+            </columns>
+        </TableView>
+        <Button mnemonicParsing="false" onAction="#handleSearchButtonAction" text="Search" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+        <Label text="Restaurant name:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Label text="Order meals:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Label text="Order deliverer:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Label text="Order delivery date and time:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="restaurantNameField" promptText="Enter restaurant name" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="mealsInOrderField" promptText="Enter meals in the order" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="delivererField" promptText="Enter deliverer's first and last name" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="deliveryDateTimeField" promptText="Enter date and time of your delivery" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+    </GridPane>
+</VBox>
